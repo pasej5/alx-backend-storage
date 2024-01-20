@@ -1,4 +1,7 @@
 -- Email validation to sent
+-- SQL script that creates a trigger that resets
+-- the attribute valid_email
+
 DELIMITER //
 CREATE TRIGGER before_user_update
 BEFORE UPDATE ON users

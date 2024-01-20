@@ -3,7 +3,7 @@
 -- Quantity in the table items can be negative.
 DROP TRIGGER IF EXISTS reduce_quantity;
 DELIMITER //
-CREATE TRIGGER after_order_insert
+CREATE TRIGGER after_insert_order
 AFTER INSERT ON orders
 FOR EACH ROW
 BEGIN
