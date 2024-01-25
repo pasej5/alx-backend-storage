@@ -14,7 +14,7 @@ class Cache:
         Storing the instance of the redis cielnt
         """
         self._redis = redis.Redis()
-        self._redis.flushdb
+        self._redis.flushdb()
 
     def store(self, data) -> str:
         """
